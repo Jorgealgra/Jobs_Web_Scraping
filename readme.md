@@ -4,14 +4,18 @@
 
 ## Instalación:
 
-        Installa el webdriver google chrome:
+        Instala el webdriver google chrome
 link:
 
         pip3 install -r requiremets
 
 ## Ejecución:
+        
         pip3 python getJobs.py
 
+
+
+Solo busca ofertas para Data scientist.
 
 
 Esto por ahora no se puede hacer:
