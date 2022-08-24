@@ -36,8 +36,10 @@ class GetJobs:
             print("Cookies Link Error")
 
         # Accedemos a los puestos de trabajo
-        link_text = '100 o más puestos de trabajo adicionales'
-        element = browser.find_element(By.LINK_TEXT, link_text)
+        #link_text = '100 o más puestos de trabajo adicionales'
+        xpath = '//*[@id="rso"]/div[1]/div/div/div/g-card[2]/div/div/div[2]/a/span[2]'
+        element = browser.find_element(By.XPATH, xpath)
+        #element = browser.find_element(By.LINK_TEXT, link_text)
         element.click()
         time.sleep(3)
 

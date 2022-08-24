@@ -1,5 +1,5 @@
 
-# Find Job like a DATA SCIENTIST
+# Find Job as DATA SCIENTIST
 
 
 ## Instalación:
