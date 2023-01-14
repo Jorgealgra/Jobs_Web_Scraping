@@ -5,7 +5,6 @@
 ## Instalación:
 
         Instala el webdriver google chrome
-link:
 
         pip3 install -r requiremets
 
