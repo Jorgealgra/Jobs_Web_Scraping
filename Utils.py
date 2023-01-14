@@ -22,7 +22,7 @@ class GetJobs:
             browser.get(self.url)
             # Necesario para esta web
             time.sleep(3)
-        except:  # Crear clase de excepciones como en java
+        except:  # Crear clase de excepciones 
 
             print("Webdriver Error")
         try:
@@ -73,11 +73,11 @@ class GetJobs:
             else:
                 try:
 
-                    # Get Other information
+                    # Obtenemos otra información
                     element = browser.find_element(By.XPATH, xpath)
                     element.click()
 
-                    # Get Urls
+                    # Obtenemos Urls
                     url = browser.current_url
                     elements = browser.find_elements(By.XPATH, '//a[@href]')
                     apply_job_url = elements[76].get_attribute('href')
@@ -87,13 +87,13 @@ class GetJobs:
                     short_url_g = shortener.dagd.short(url)
                     short_apply_job_url = shortener.dagd.short(apply_job_url)
 
-                    # Record information
+                    # Guardamos la información
                     job_information = element.text + '\n' + short_url_g + '\n' + short_apply_job_url
 
                     time.sleep(2)
                     job_number_count += 1
 
-                    # Get List
+                    # Listamos la información
                     job_information_list = job_information.split('\n')
                     if len(job_information_list) == 8:
                         job_information_list.insert(0, '?')
